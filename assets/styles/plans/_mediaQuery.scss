@@ -1,0 +1,193 @@
+@media (min-width: 640px) and (max-width: 1299px){
+
+    main{
+      padding-top: 36px;
+      // background: #fff;
+  
+      .header__qoute{
+        height: 39vh;
+    
+        h1{
+          font-size: clamp(18px, 3vw, 39px);
+        }
+      }
+  
+      .plans{
+        // margin-top: -5px;
+        // margin-bottom: 20px;
+        flex-direction: none;
+    
+        .section-title{
+          font-size: clamp(18px, 3vw, 28px);
+        }
+    
+        .plan__list{
+          align-items: center;
+          // flex-direction: column-reverse;
+    
+          .plan {
+            width: 29vw;
+            min-width: 150px;
+            padding: 0px;
+    
+            .plan__title {
+              // font-size: 14px;
+              font-size: clamp(14px, 2vw, 28px);
+              // margin-bottom: 12px;
+            }
+            
+            .plan__price {
+              // margin-bottom: 14px;
+              // font-size: 14px;
+              font-size: clamp(14px, 2vw, 24px);
+            }
+    
+            .plan__description{
+              // font-size: 14px;
+              font-size: clamp(14px, 2vw, 20px);
+              // margin-bottom: 20px;
+            }
+            
+            .plan__features {
+              .plan__feature {
+                font-size: clamp(12px, 2vw, 16px);
+              }
+            }
+          }
+    
+          .plan--highlighted {
+            .plan__annotation {
+              font-size: clamp(18px, 2vw, 22px);
+              // padding: 4px;
+            }
+          }
+        }
+      }
+      
+      .key-features{
+        .section-title{
+          // font-size: 18px;
+          font-size: clamp(18px, 2vw, 28px);
+          // text-align: center;
+        }
+  
+        .key-feature__list{
+          list-style: none;
+          // column-gap: 0;
+  
+          .key-feature{
+              .key-feature__description{
+                font-size: clamp(14px, 2vw, 18px);
+                text-align: center;
+              }
+          }
+        }
+      }
+    }  
+  }
+
+@media (min-width: 320px) and (max-width: 639px){
+
+    @import '../share/hamburgerMenus';
+  
+    main{
+      padding-top: 36px;
+      // background: #fff;
+  
+      .header__qoute{
+        height: 32vh;
+    
+        h1{
+          font-size: 14px;
+        }
+      }
+  
+      .plans{
+        margin-top: -5px;
+        margin-bottom: 20px;
+        flex-direction: none;
+    
+        .section-title{
+          padding: 20px 0;
+          font-size: 14px;
+        }
+    
+        .plan__list{
+          align-items: center;
+          flex-direction: column-reverse;
+    
+          .plan {
+            width: 95vw;
+            padding: 10px 0;
+            margin-top: 1px;
+            min-width: 280px;
+            // max-width: 420px;
+            // width: 100%;
+            height: 345px;
+    
+            .plan__title {
+              font-size: 14px;
+              margin-bottom: 12px;
+            }
+            
+            .plan__price {
+              margin-bottom: 14px;
+              font-size: 14px;
+            }
+    
+            .plan__description{
+              font-size: 14px;
+              margin-bottom: 20px;
+            }
+    
+            .plan__features {
+              .plan__feature {
+                margin: 1px 0;
+                margin-bottom: 5px;
+              }
+            }
+    
+            .plan__btn{
+              margin-top: 20px;
+            }
+            
+          }
+    
+          .plan--highlighted {
+            box-shadow: 0px 2px 5px 4px rgba(0,0,0,0.5);
+            height: 390px;
+            // max-width: 380px;
+            order: 1;
+    
+            .plan__annotation {
+              font-size: 18px;
+              padding: 4px;
+            }
+          }
+        }
+      }
+      
+      .key-features{
+        margin-top: -20px;
+  
+        .section-title{
+          padding: 20px 0;
+          font-size: 18px;
+          text-align: center;
+        }
+  
+        .key-feature__list{
+          flex-direction: column;
+          list-style: none;
+          column-gap: 0;
+  
+          .key-feature{
+              .key-feature__description{
+                  font-size: 14px;
+                  text-align: center;
+              }
+          }
+        }
+      }
+    }  
+  }

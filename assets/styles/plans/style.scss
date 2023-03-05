@@ -1,0 +1,67 @@
+@import '../share/fonts';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    color: #fff;
+  }
+
+  .backdrop {
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 105;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    // background: blue;
+  }
+
+  .show-backdrop {
+    display: block;
+  }
+
+  .btn-menus{
+    display: none;
+    position: fixed;
+    padding-left: 10px;
+    z-index: 101;
+
+    .toggle-button{
+        width: 4rem;
+        background: #212428;
+        border: none;
+        cursor: pointer;
+        padding: 0 20px;
+ 
+         &:focus{
+            outline: none;
+         }
+          
+          .toggle-button__bar {
+            width: 100%;
+            height: 0.1rem;
+            background: #fff;
+            display: block;
+            margin: 0.4rem 0;
+          }
+      }
+}  
+
+
+@import '../share/mainNav';
+@import 'main';
+@import '../share/footer';
+@import '../plans/mediaQuery';
+@import '../share/mobileNav';

@@ -1,0 +1,235 @@
+//desktop view
+@media (min-width: 1401px) and (max-width: 1531px){
+    main{
+        .container{
+            .testimonials--list{
+                .testimonial__info{
+                    .customer--testimonial{
+                        p{
+                            
+                            font-size : clamp(25px, 1vw, 27px);
+                            padding: 32px;
+                            color: #505862;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+
+//tablet to desktop view
+@media (min-width: 781px) and (max-width: 1400px){
+    main{
+    
+        .container{
+            margin-top: 38px;
+            padding: 41px 0;
+    
+            .header__qoute{
+                padding-top: 31px;
+                padding-bottom: 5px;
+            }
+    
+            .testimonials--list{
+                column-gap: 28px;
+                margin: 11px 32px;
+                padding-top: 42px;
+    
+                .testimonial__info{
+                    .customer--testimonial{
+                        p{
+                            // font-size: 18px;
+                            font-size : clamp(18px, 2vw, 28px);
+                            padding: 32px;
+                            color: #505862;
+                        }
+    
+                        .customer--img-1,
+                        .customer--img-2,
+                        .customer--img-3{
+                            top: 255px;
+                            width: 98px;
+                            height: 98px;
+                        }
+                    }
+    
+                    .customer--info{
+                        padding-top: 48px;
+                        text-align: center;
+    
+                        h3{
+                            color: #adb1b8;
+                            text-decoration: underline;
+                            font-size: 24px;
+                            letter-spacing: 1.5px;
+                            cursor: pointer;
+                        }
+    
+                        p{
+                            color: #ff1a5e;
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+
+//mobile to tablet view
+@media (min-width: 481px) and (max-width: 780px){
+
+    @import '../share/hamburgerMenus';
+
+    main{
+        margin-bottom: -32px;
+    
+        .container{
+            margin-top: 10px;
+            padding: 20px 0;
+    
+            .header__qoute{
+
+                h3{
+                    padding-bottom: 15px;
+                    font-size: 24px;
+                    letter-spacing: 2px;
+                }
+    
+                h2{
+                    font-size: 30px;
+                    padding-bottom: 20px;
+                }
+    
+                .line--separate{
+                    width: 145px;
+                }
+            }
+    
+            .testimonials--list{
+                justify-content: center;
+                flex-direction: column;
+                margin: 5px 10px;
+                padding-top: 5px;
+    
+                .testimonial__info{
+    
+                    .customer--testimonial{
+                        max-width: 650px;
+                        height: 220px;
+    
+                        p{
+                            font-size: 19px;
+                        }
+    
+                        .customer--img-1,
+                        .customer--img-2,
+                        .customer--img-3{
+                            top: 158px;
+                            width: 120px;
+                            height: 120px;
+                        }
+                    }
+    
+                    .customer--info{
+                        padding-top: 88px;
+                        padding-bottom: 42px;
+                        text-align: center;
+    
+                        h3{                       
+                            font-size: 24px;
+                            letter-spacing: 1.5px;
+                        }
+    
+                        p{
+                            color: #ff1a5e;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}
+
+//mobile view
+@media (min-width: 320px) and (max-width: 480px){
+
+      
+    @import '../share/hamburgerMenus';
+
+   
+    main{
+        margin-bottom: -32px;
+    
+        .container{
+            margin-top: 10px;
+            padding: 20px 0;
+    
+            .header__qoute{
+
+                h3{
+                    padding-bottom: 15px;
+                    font-size: 17px;
+                    letter-spacing: 2px;
+                }
+    
+                h2{
+                    font-size: 20px;
+                    padding-bottom: 20px;
+                }
+    
+                .line--separate{
+                    width: 145px;
+                }
+            }
+    
+            .testimonials--list{
+                justify-content: center;
+                flex-direction: column;
+                margin: 5px 10px;
+                padding-top: 5px;
+    
+                .testimonial__info{
+    
+                    .customer--testimonial{
+                        // display: flex;
+                        // justify-content: center;
+                        // align-items: center;
+                        // flex-direction: column;
+                        height: 180px;
+    
+                        p{
+                            font-size: 14px;
+                        }
+    
+                        .customer--img-1,
+                        .customer--img-2,
+                        .customer--img-3{
+                            top: 132px;
+                            width: 90px;
+                            height: 90px;
+                        }
+                    }
+    
+                    .customer--info{
+                        padding-top: 55px;
+                        padding-bottom: 42px;
+                        text-align: center;
+    
+                        h3{
+                            font-size: 20px;
+                            letter-spacing: 1.5px;
+                        }
+    
+                        p{
+                            color: #ff1a5e;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+  }

@@ -1,0 +1,198 @@
+main{
+    // width: 100vw;
+    margin: 0 auto;
+    background: #384247;
+  
+    .header__qoute{
+      width: 100%;
+      height: 45vh;
+      position: relative;
+      background-image: url("../../images/freedom.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: left 10% bottom 85%;
+      background-origin: border-box;
+      background-clip: border-box;
+  
+      &::after{
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background-color: #f2f2f2;
+        background-blend-mode: multiply;
+        mix-blend-mode: multiply;
+      }
+  
+      h1{
+        z-index: 101;
+        color: #4d4d4d;
+        position: absolute;
+        top: 32%;
+        left: 40%;
+        font-size: 39px;
+      }
+    }
+    .plans{
+      width: 100%;
+      margin-bottom: 110px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #212428;
+  
+      .section-title{
+        padding: 32px 0;
+        font-size: 28px;
+        color: #fff;
+      }
+  
+      .plan__list{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+  
+        .plan {
+          background: #b3b3b3;
+          text-align: center;
+          padding: 1rem;
+          margin: 0.5rem 0;
+          width: 380px;
+          height: 465px;
+  
+          .plan__title {
+            color: #0b0d0e;
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 32px;
+          }
+          
+          .plan__price {
+            color: #2d3239;
+            margin-bottom: 32px;
+            font-size: 24px;
+          }
+  
+          .plan__description{
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+            margin-bottom: 32px;
+          }
+  
+          .plan__features {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+  
+            .plan__feature {
+              margin: 0.5rem 0;
+              font-size: 16px;
+              margin-bottom: 12px;
+            }
+          }
+  
+          .plan__btn{
+            margin-top: 32px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: none;
+            background: #0b0d0e;
+            color: #fff;
+            font-weight: 700;
+            cursor: pointer;
+  
+            &:hover{
+              background: #454b54;
+            }
+          }
+          
+        }
+  
+        .plan--highlighted {
+          background:  #384247;
+          box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+          color: white;
+          margin-top: -10px;
+          width: 380px;
+          height: 496px;
+          z-index: 100;
+  
+          .plan__annotation {
+            background: white;
+            color: #ff1a5e;
+            font-weight: 700;
+            font-size: 22px;
+            padding: 0.5rem;
+            box-shadow: 2px 2px 2px 2px rgba(102, 102, 102, 0.5);
+            border-radius: 8px;
+          }
+  
+          .plan__title{
+            color: #fff;
+          }
+  
+          .plan__price{
+            color:  #d5d8dd;
+          }
+  
+          .plan__description{
+            color: #fff;
+          }
+
+          .plan__btn{
+            margin-top: 18px;
+          }
+        }
+      }
+    }
+    
+    .key-features{
+      width: 100%;
+      margin: 32px 0 -48px 0;
+      background: #ff1a5e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .section-title{
+        padding: 48px 0 18px 0;
+        font-size: 28px;
+      }
+
+      .key-feature__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        // margin: 0;
+        // padding: 0;
+        // column-gap: 295px;
+        // text-align: center;
+
+        .key-feature{
+            padding-top: 18px;
+            margin: 0 30px;
+            .key-feature__image{
+                background: #ffcede;
+                width: 128px;
+                height: 128px;
+                border: 2px solid #424242;
+                border-radius: 50%;
+                margin: auto;
+                padding: 1.5rem;
+            }
+
+            .key-feature__description{
+                font-size: 18px;
+                font-weight: 600;
+                padding: 28px 0;
+            }
+        }
+      }
+    }
+  }  

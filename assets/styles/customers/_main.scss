@@ -1,0 +1,127 @@
+main{
+    // background: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -20px;
+    // height: 90vh;
+
+    .container{
+        margin-top: 31px;
+        padding: 34px 0;
+
+        .header__qoute{
+            text-align: center;
+            padding: 31px 0;
+
+            h3{
+                padding-bottom: 12px;
+                font-size: 36px;
+                letter-spacing: 3px;
+                color: #ff1a5e;
+            }
+
+            h2{
+                font-size: 48px;
+                letter-spacing: 2px;
+                padding-bottom: 12px;
+            }
+
+            .line--separate{
+                border-bottom: 2px solid #ff1a5e;
+                width: 250px;
+                margin: 0 auto;
+            }
+        }
+
+        .testimonials--list{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            column-gap: 32px;
+            margin: 11px 120px;
+            padding-top: 50px;
+
+          
+            .testimonial__info{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .customer--testimonial{
+                    position: relative;
+                    border: 1px solid #212428;
+                    max-width: 470px;
+                    width: 100%;
+                    height: 320px;
+                    background: #b3b3b3;
+                    // text-align: justify;
+                    text-align: center;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 5px 1px rgba(92, 101, 112,0.75);
+                   cursor: pointer;
+
+                    p{
+                        font-size: 28px;
+                        padding: 32px;
+                        color: #505862;
+                    }
+
+                    .customer--img-1,
+                    .customer--img-2,
+                    .customer--img-3{
+                        position: absolute;
+                        top: 255px;
+                        // left: 170px;
+                        left: 0; 
+                        right: 0; 
+                        margin-left: auto; 
+                        margin-right: auto; 
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 50%;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-origin: border-box;
+                        background-clip: border-box;
+                        border: 1px solid #212428;
+                    }
+
+                    .customer--img-1{
+                        background-image: url("../../images/cust-1.jpg");
+                        background-position: left 50% bottom 85%;
+                    }
+
+                    .customer--img-2{
+                        background-image: url("../../images/cust-2.jpg");
+                        background-position: left 50% bottom 95%;
+                    }
+
+                    .customer--img-3{
+                        background-image: url("../../images/cust-3.jpg");
+                        background-position: left 75% bottom 85%;
+                    }
+                }
+
+                .customer--info{
+                    padding-top: 75px;
+                    text-align: center;
+
+                    h3{
+                        color: #adb1b8;
+                        text-decoration: underline;
+                        font-size: 24px;
+                        letter-spacing: 1.5px;
+                        cursor: pointer;
+                    }
+
+                    p{
+                        color: #ff1a5e;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+} 
